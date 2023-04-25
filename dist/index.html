@@ -1,15 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>facebook clone</title>
 
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- css -->
-    <link rel="stylesheet" href="./output.css">
-</head>
-<body>
-    <h1 class="text-5xl" >facebook clone text</h1>
-</body>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="font-roboto bg-ofWhite">
+    <!-- header start -->
+    <header>
+      <div class="bg-white">
+        <div class="container flex items-center justify-start py-2 px-4">
+          <!-- logo -->
+          <div class="flex space-x-5 w-1/4">
+            <a href="#">
+              <i class="fa-brands fa-facebook text-4xl text-primary"></i>
+            </a>
+            <div class="relative flex items-center">
+              <input
+                class="outline-none border-none bg-ofWhite px-5 py-2 pl-9 rounded-full text-textPrimary"
+                type="text"
+                placeholder="Search Facebook"
+              />
+              <span
+                class="material-symbols-outlined absolute left-3 text-xl text-textSec"
+              >
+                search
+              </span>
+            </div>
+          </div>
+
+          <!-- main nav -->
+          <div
+            class="flex items-center content-center justify-center w-1/2 gap-1"
+          >
+            <a
+              class="text-primary px-8 hover:bg-ofWhite py-1 rounded-lg"
+              href="#"
+              ><span class="material-symbols-outlined fill-icon text-3xl">
+                home
+              </span></a
+            >
+            <a
+              class="text-textSec px-8 hover:bg-ofWhite py-1 rounded-lg"
+              href="#"
+              ><span class="material-symbols-outlined text-3xl">
+                live_tv
+              </span></a
+            >
+            <a
+              class="text-textSec px-8 hover:bg-ofWhite py-1 rounded-lg"
+              href="#"
+              ><span class="material-symbols-outlined text-3xl">
+                storefront
+              </span></a
+            >
+            <a
+              class="text-textSec px-8 hover:bg-ofWhite py-1 rounded-lg"
+              href="#"
+            >
+              <span class="material-symbols-outlined text-3xl"> groups </span>
+            </a>
+            <a
+              class="text-textSec px-8 hover:bg-ofWhite py-1 rounded-lg"
+              href="#"
+              ><span class="material-symbols-outlined text-3xl">
+                stadia_controller
+              </span></a
+            >
+            <span
+              class="hidden material-symbols-outlined text-3xl text-textSec px-8 hover:bg-ofWhite py-1 rounded-lg"
+            >
+              menu
+            </span>
+          </div>
+
+          <!-- shortcut -->
+          <div
+            class="flex w-1/4 items-center justify-end text-textPrimary gap-2"
+          >
+            <button
+              class="bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center"
+            >
+              <span class="material-symbols-outlined text-3xl font-semibold">
+                apps
+              </span>
+            </button>
+            <button
+              class="bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center"
+            >
+              <i class="fa-brands fa-facebook-messenger text-lg"></i>
+            </button>
+            <button
+              class="bg-gray-200 w-10 h-10 rounded-full flex items-center justify-center"
+            >
+              <i class="fa-solid fa-bell text-lg"></i>
+            </button>
+            <a
+              class="bg-gray-200 w-10 h-10 rounded-full overflow-hidden flex items-center justify-center"
+              href="#"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1583692331507-fc0bd348695d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+      <div class="container flex pt-4">
+        <!-- left sidebar start -->
+        <div class="block w-1/4">
+          <!-- sidenav -->
+          <div class="mb-2">
+            <ul class="font-semibold">
+              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+                <a class="capitalize flex items-center" href="#"
+                  ><span
+                    class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden mr-4"
+                    ><img
+                      src="https://images.unsplash.com/photo-1583692331507-fc0bd348695d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                      alt=""
+                  /></span>
+                  ashik sarker</a
+                >
+              </li>
+              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+                <a class="capitalize flex items-center content-center" href="#"
+                  ><span
+                    class="material-symbols-outlined fill-icon flex items-center justify-center text-3xl text-primary w-10 h-10 mr-4"
+                  >
+                    group
+                  </span>
+                  <span>friends</span></a
+                >
+              </li>
+              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+                <a class="capitalize flex items-center content-center" href="#"
+                  ><span
+                    class="material-symbols-outlined fill-icon flex items-center justify-center text-3xl text-primary w-10 h-10 mr-4"
+                  >
+                    groups
+                  </span>
+                  <span>groups</span></a
+                >
+              </li>
+              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+                <a class="capitalize flex items-center content-center" href="#"
+                  ><span
+                    class="material-symbols-outlined fill-icon flex items-center justify-center text-3xl text-primary w-10 h-10 mr-4"
+                  >
+                    tab_recent
+                  </span>
+                  <span>most recent</span></a
+                >
+              </li>
+              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+                <a class="capitalize flex items-center content-center" href="#"
+                  ><span
+                    class="material-symbols-outlined flex items-center justify-center text-3xl text-primary w-10 h-10 mr-4"
+                  >
+                    live_tv
+                  </span>
+                  <span>watch</span></a
+                >
+              </li>
+              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+                <a class="capitalize flex items-center content-center" href="#"
+                  ><span
+                    class="material-symbols-outlined fill-icon flex items-center justify-center text-3xl text-orange-600 w-10 h-10 mr-4"
+                  >
+                    flag
+                  </span>
+                  <span>pages</span></a
+                >
+              </li>
+              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+                <button class="capitalize flex items-center content-center">
+                  <span
+                    class="material-symbols-outlined flex items-center justify-center text-3xl text-textPrimary w-10 h-10 mr-4 bg-gray-300 rounded-full"
+                  >
+                    expand_more
+                  </span>
+                  <span class="font-">see more</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- groups shortcut -->
+          <div>
+            <div
+              class="flex items-center justify-between px-2 py-3 border-t border-gray-400"
+            >
+              <h3 class="text-base font-semibold text-textSec capitalize">
+                your shortcut
+              </h3>
+            </div>
+
+            <ul class="font-medium">
+              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+                <a class="capitalize flex items-center" href="#">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-xl overflow-hidden mr-4"
+                  >
+                    <img
+                      class="scale-150"
+                      src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                      alt="group image"
+                    />
+                  </span>
+                  <span>Lorem ipsum dolor sit amet consectetur.</span>
+                </a>
+              </li>
+              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+                <a class="capitalize flex items-center" href="#">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-xl overflow-hidden mr-4"
+                  >
+                    <img
+                      class="scale-150"
+                      src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                      alt="group image"
+                    />
+                  </span>
+                  <span>Lorem ipsum dolor sit</span>
+                </a>
+              </li>
+              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+                <a class="capitalize flex items-center" href="#">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-xl overflow-hidden mr-4"
+                  >
+                    <img
+                      class="scale-150"
+                      src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                      alt="group image"
+                    />
+                  </span>
+                  <span
+                    >Lorem ipsum dolor sit amet consectetur adipisicing.</span
+                  >
+                </a>
+              </li>
+              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+                <a class="capitalize flex items-center" href="#">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-xl overflow-hidden mr-4"
+                  >
+                    <img
+                      class="scale-150"
+                      src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                      alt="group image"
+                    />
+                  </span>
+                  <span>Lorem ipsum dolor sit amet consectetur.</span>
+                </a>
+              </li>
+
+              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+                <button class="capitalize flex items-center content-center">
+                  <span
+                    class="material-symbols-outlined flex items-center justify-center text-3xl text-textPrimary w-10 h-10 mr-4 bg-gray-300 rounded-full"
+                  >
+                    expand_more
+                  </span>
+                  <span class="font-">see more</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- left sidebar end -->
+
+        <!-- main content start -->
+        <div class="block w-1/2 h-60 bg-primary"></div>
+        <!-- main content end -->
+
+        <!-- right sidebar start -->
+        <div class="block w-1/4 h-60 bg-red-600"></div>
+        <!-- right sidebar end -->
+      </div>
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer></footer>
+    <!-- footer end -->
+  </body>
 </html>
