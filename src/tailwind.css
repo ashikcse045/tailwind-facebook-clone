@@ -9,10 +9,36 @@
 @tailwind utilities;
 
 @layer components {
+  * {
+    @apply box-border;
+  }
   .container {
     @apply mx-auto px-2;
   }
   .fill-icon {
     font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  }
+  .sidebar {
+    @apply w-1/4 overflow-y-auto fixed py-4 top-[4rem] bottom-0
+  }
+
+  .sidebar::-webkit-scrollbar {
+    width: 9px;
+  }
+
+  .sidebar::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .sidebar::-webkit-scrollbar-thumb {
+    @apply bg-transparent rounded-full;
+  }
+
+  .sidebar:hover::-webkit-scrollbar-thumb {
+    @apply bg-gray-500;
+  }
+
+  .sidebar::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-800;
   }
 }
