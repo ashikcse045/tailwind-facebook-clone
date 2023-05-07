@@ -13,7 +13,7 @@
     @apply box-border;
   }
   .container {
-    @apply mx-auto px-2;
+    @apply mx-auto md:px-2;
   }
   .fill-icon {
     font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
