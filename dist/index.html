@@ -18,10 +18,10 @@
     <!-- css -->
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body class="font-roboto bg-ofWhite">
+  <body class="font-roboto bg-ofWhite dark:bg-darkBg">
     <!-- header start -->
     <header class="">
-      <div class="bg-white fixed top-0 left-0 w-full z-50">
+      <div class="bg-white dark:bg-dark fixed top-0 left-0 w-full z-50">
         <div class="container flex items-center justify-start py-2 px-4">
           <!-- logo -->
           <div class="flex space-x-2 xl:space-x-5 w-1/4">
@@ -30,12 +30,12 @@
             </a>
             <div class="relative flex items-center">
               <input
-                class="hidden xl:block outline-none border-none bg-ofWhite px-5 py-2 pl-9 rounded-full text-textPrimary"
+                class="hidden xl:block outline-none border-none bg-ofWhite dark:bg-darkLight px-5 py-2 pl-10 rounded-full text-textPrimary dark:text-gray-300"
                 type="text"
                 placeholder="Search Facebook"
               />
               <span
-                class="w-10 h-10 flex items-center box-border xl:absolute xl:left-3 text-2xl xl:text-xl p-2 rounded-full bg-gray-200 xl:bg-transparent xl:p-0 text-textSec"
+                class="w-10 h-10 flex items-center box-border xl:absolute xl:left-3 text-2xl xl:text-xl p-2 rounded-full bg-gray-200 dark:bg-darkLight dark:text-gray-200 xl:bg-transparent dark:xl:bg-transparent xl:p-0 text-textSec"
               >
                 <span class="material-symbols-outlined"> search </span>
               </span>
@@ -47,41 +47,41 @@
             class="flex items-center content-center justify-center w-1/4 md:w-1/2 gap-1"
           >
             <a
-              class="text-primary hidden md:inline px-4 xl:px-8 hover:bg-ofWhite py-1 rounded-lg"
+              class="text-primary hidden md:inline px-4 xl:px-8 hover:bg-ofWhite dark:hover:bg-darkLight py-1 rounded-lg"
               href="#"
               ><span class="material-symbols-outlined fill-icon text-3xl">
                 home
               </span></a
             >
             <a
-              class="text-textSec hidden md:inline px-4 xl:px-8 hover:bg-ofWhite py-1 rounded-lg"
+              class="text-textSec dark:text-gray-400 hidden md:inline px-4 xl:px-8 hover:bg-ofWhite dark:hover:bg-darkLight py-1 rounded-lg"
               href="#"
               ><span class="material-symbols-outlined text-3xl">
                 live_tv
               </span></a
             >
             <a
-              class="text-textSec hidden md:inline px-4 xl:px-8 hover:bg-ofWhite py-1 rounded-lg"
+              class="text-textSec dark:text-gray-400 hidden md:inline px-4 xl:px-8 hover:bg-ofWhite dark:hover:bg-darkLight py-1 rounded-lg"
               href="#"
               ><span class="material-symbols-outlined text-3xl">
                 storefront
               </span></a
             >
             <a
-              class="text-textSec hidden md:inline px-4 xl:px-8 hover:bg-ofWhite py-1 rounded-lg"
+              class="text-textSec dark:text-gray-400 hidden md:inline px-4 xl:px-8 hover:bg-ofWhite dark:hover:bg-darkLight py-1 rounded-lg"
               href="#"
             >
               <span class="material-symbols-outlined text-3xl"> groups </span>
             </a>
             <a
-              class="text-textSec hidden xl:inline px-4 xl:px-8 hover:bg-ofWhite py-1 rounded-lg"
+              class="text-textSec dark:text-gray-400 hidden xl:inline px-4 xl:px-8 hover:bg-ofWhite dark:hover:bg-darkLight py-1 rounded-lg"
               href="#"
               ><span class="material-symbols-outlined text-3xl">
                 stadia_controller
               </span></a
             >
             <span
-              class="xl:hidden material-symbols-outlined text-3xl text-textSec px-2 hover:bg-ofWhite py-1 rounded-lg"
+              class="xl:hidden material-symbols-outlined text-3xl text-textSec dark:text-gray-300 px-2 hover:bg-ofWhite dark:hover:bg-darkLight py-1 rounded-lg"
             >
               menu
             </span>
@@ -89,12 +89,12 @@
 
           <!-- shortcut -->
           <div
-            class="flex w-1/2 md:w-1/4 items-center justify-end text-textPrimary gap-2"
+            class="flex w-1/2 md:w-1/4 items-center justify-end text-textPrimary gap-2 dark:text-gray-200"
           >
             <!-- more  -->
             <button>
               <span
-                class="bg-gray-200 box-border w-10 h-10 rounded-full flex items-center justify-center"
+                class="bg-gray-200 dark:bg-darkLight box-border w-10 h-10 rounded-full flex items-center justify-center"
               >
                 <span
                   class="material-symbols-outlined text-2xl xl:text-3xl font-semibold"
@@ -107,7 +107,7 @@
             <!-- messenger -->
             <button class="hidden md:inline">
               <span
-                class="bg-gray-200 box-border w-10 h-10 rounded-full flex items-center justify-center"
+                class="bg-gray-200 dark:bg-darkLight box-border w-10 h-10 rounded-full flex items-center justify-center"
               >
                 <i class="fa-brands fa-facebook-messenger text-lg"></i>
               </span>
@@ -116,18 +116,20 @@
             <!-- notification -->
             <button class="hidden md:inline">
               <span
-                class="bg-gray-200 box-border w-10 h-10 rounded-full flex items-center justify-center"
+                class="bg-gray-200 dark:bg-darkLight box-border w-10 h-10 rounded-full flex items-center justify-center"
               >
                 <i class="fa-solid fa-bell text-lg"></i>
               </span>
             </button>
 
             <!-- dark mode -->
-            <button>
+            <button id="themeBtn">
               <span
-                class="bg-gray-200 box-border w-10 h-10 rounded-full flex items-center justify-center"
+                class="bg-gray-200 dark:bg-darkLight box-border w-10 h-10 rounded-full flex items-center justify-center"
               >
-                <span class="material-symbols-outlined fill-icon text-lg">
+                <span
+                  class="material-symbols-outlined fill-icon text-lg dark:text-yellow-400"
+                >
                   dark_mode
                 </span>
               </span>
@@ -151,14 +153,16 @@
     <!-- header end -->
 
     <!-- main start -->
-    <main>
+    <main class="">
       <div class="container flex pt-[4rem]">
         <!-- left sidebar start -->
         <div class="hidden xl:block left-1 sidebar">
           <!-- sidenav -->
           <div class="mb-2">
             <ul class="font-semibold">
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center" href="#"
                   ><span
                     class="flex items-center justify-center w-10 h-10 rounded-full overflow-hidden mr-4"
@@ -169,7 +173,9 @@
                   ashik sarker</a
                 >
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center content-center" href="#"
                   ><span
                     class="material-symbols-outlined fill-icon flex items-center justify-center text-3xl text-primary w-10 h-10 mr-4"
@@ -179,7 +185,9 @@
                   <span>friends</span></a
                 >
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center content-center" href="#"
                   ><span
                     class="material-symbols-outlined fill-icon flex items-center justify-center text-3xl text-primary w-10 h-10 mr-4"
@@ -189,7 +197,9 @@
                   <span>groups</span></a
                 >
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center content-center" href="#"
                   ><span
                     class="material-symbols-outlined fill-icon flex items-center justify-center text-3xl text-primary w-10 h-10 mr-4"
@@ -199,7 +209,9 @@
                   <span>most recent</span></a
                 >
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center content-center" href="#"
                   ><span
                     class="material-symbols-outlined flex items-center justify-center text-3xl text-primary w-10 h-10 mr-4"
@@ -209,7 +221,9 @@
                   <span>watch</span></a
                 >
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center content-center" href="#"
                   ><span
                     class="material-symbols-outlined fill-icon flex items-center justify-center text-3xl text-orange-600 w-10 h-10 mr-4"
@@ -219,10 +233,12 @@
                   <span>pages</span></a
                 >
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <button class="capitalize flex items-center content-center">
                   <span
-                    class="material-symbols-outlined flex items-center justify-center text-3xl text-textPrimary w-10 h-10 mr-4 bg-gray-300 rounded-full"
+                    class="material-symbols-outlined flex items-center justify-center text-3xl text-textPrimary dark:text-gray-200 w-10 h-10 mr-4 bg-gray-300 dark:bg-darkLight rounded-full"
                   >
                     expand_more
                   </span>
@@ -242,7 +258,9 @@
             </div>
 
             <ul class="font-medium">
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center" href="#">
                   <span class="mr-4">
                     <span
@@ -258,7 +276,9 @@
                   <span>Lorem ipsum dolor sit amet consectetur.</span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center" href="#">
                   <span class="mr-4">
                     <span
@@ -274,7 +294,9 @@
                   <span>Lorem ipsum dolor sit amet consectetur.</span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center" href="#">
                   <span class="mr-4">
                     <span
@@ -292,7 +314,9 @@
                   >
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center" href="#">
                   <span class="mr-4">
                     <span
@@ -308,7 +332,9 @@
                   <span>Lorem ipsum dolor sit amet consectetur.</span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center" href="#">
                   <span class="mr-4">
                     <span
@@ -324,7 +350,9 @@
                   <span>Lorem ipsum dolor sit amet consectetur.</span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center" href="#">
                   <span class="mr-4">
                     <span
@@ -340,7 +368,9 @@
                   <span>Lorem ipsum dolor sit amet consectetur.</span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center" href="#">
                   <span class="mr-4">
                     <span
@@ -356,7 +386,9 @@
                   <span>Lorem ipsum dolor sit amet consectetur.</span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center" href="#">
                   <span class="mr-4">
                     <span
@@ -372,6 +404,18 @@
                   <span>Lorem ipsum dolor sit amet consectetur.</span>
                 </a>
               </li>
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
+                <button class="capitalize flex items-center content-center">
+                  <span
+                    class="material-symbols-outlined flex items-center justify-center text-3xl text-textPrimary dark:text-gray-200 w-10 h-10 mr-4 bg-gray-300 dark:bg-darkLight rounded-full"
+                  >
+                    expand_more
+                  </span>
+                  <span class="font-">see more</span>
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -382,12 +426,12 @@
           class="w-full lg:w-[78%] xl:w-[56%] xl:mx-auto md:px-20 py-5 space-y-4"
         >
           <!-- story and reels -->
-          <div class="bg-white rounded-lg drop-shadow overflow-hidden">
+          <div class="publicPost">
             <div
-              class="flex items-center px-4 py-1 justify-between border-b border-gray-300"
+              class="flex items-center px-4 py-1 justify-between border-b border-gray-300 dark:border-darkLight"
             >
               <a
-                class="flex w-1/2 space-x-2 text-md items-center text-primary capitalize justify-center hover:bg-gray-200 py-4 rounded-md transition-colors"
+                class="flex w-1/2 space-x-2 text-md items-center text-primary capitalize justify-center hover:bg-gray-200 dark:hover:bg-darkLight py-4 rounded-md transition-colors"
                 href="#"
               >
                 <span class="material-symbols-outlined fill-icon text-2xl">
@@ -396,7 +440,7 @@
                 <span> story </span>
               </a>
               <a
-                class="flex w-1/2 space-x-2 text-md items-center text-textSec capitalize justify-center hover:bg-gray-200 py-4 rounded-md transition-colors"
+                class="flex w-1/2 space-x-2 text-md items-center text-textSec dark:text-gray-400 capitalize justify-center hover:bg-gray-200 dark:hover:bg-darkLight py-4 rounded-md transition-colors"
                 href="#"
               >
                 <span class="material-symbols-outlined text-2xl"> movie </span>
@@ -406,31 +450,31 @@
 
             <div class="flex py-4 pl-4 overflow-x-auto items-center space-x-2">
               <!-- add new sotory -->
-              <div
-                class="storyCard w-32 overflow-hidden rounded-lg drop-shadow-md"
-              >
+              <div class="storyCard">
                 <a class="relative" href="#">
                   <img
                     src="https://images.unsplash.com/photo-1583692331507-fc0bd348695d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
                     alt=""
                   />
                   <div
-                    class="absolute bg-white text-center bottom-0 left-0 w-full py-1"
+                    class="absolute bg-white dark:bg-dark text-center bottom-0 left-0 w-full py-1"
                   >
                     <span
-                      class="material-symbols-outlined fill-icon text-primary text-5xl -mt-6 bg-white rounded-full"
+                      class="material-symbols-outlined fill-icon text-primary text-4xl -mt-6 bg-white dark:bg-dark rounded-full"
                     >
                       add_circle
                     </span>
-                    <p class="capitalize text-textSec text-sm">create story</p>
+                    <p
+                      class="capitalize text-textSec dark:text-gray-200 text-sm"
+                    >
+                      create story
+                    </p>
                   </div>
                 </a>
               </div>
 
               <!-- friends story -->
-              <div
-                class="storyCard w-32 overflow-hidden rounded-lg drop-shadow"
-              >
+              <div class="storyCard">
                 <a class="relative" href="#">
                   <img
                     src="https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
@@ -456,9 +500,7 @@
                 </a>
               </div>
 
-              <div
-                class="hidden md:block storyCard w-32 overflow-hidden rounded-lg drop-shadow"
-              >
+              <div class="hidden md:block storyCard">
                 <a class="relative" href="#">
                   <img
                     src="https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
@@ -484,9 +526,7 @@
                 </a>
               </div>
 
-              <div
-                class="hidden lg:block storyCard w-32 overflow-hidden rounded-lg drop-shadow"
-              >
+              <div class="hidden lg:block storyCard">
                 <a class="relative" href="#">
                   <img
                     src="https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
@@ -515,9 +555,9 @@
           </div>
 
           <!-- create post -->
-          <div class="bg-white p-4 rounded-lg drop-shadow overflow-hidden">
+          <div class="p-4 publicPost">
             <div
-              class="flex space-x-3 md:space-x-6 border-b border-gray-300 pb-4"
+              class="flex space-x-3 md:space-x-6 border-b border-gray-300 dark:border-darkLight pb-4"
             >
               <a class="box-border" href="#">
                 <span
@@ -531,7 +571,7 @@
               </a>
               <div class="flex items-center w-full">
                 <input
-                  class="px-6 py-2 text-lg w-full bg-gray-200 hover:bg-gray-300 transition-colors placeholder-textSec rounded-full outline-none cursor-pointer"
+                  class="px-6 py-2 text-lg w-full bg-gray-200 dark:bg-darkLight hover:bg-gray-300 dark:hover:bg-[#4E4F50] transition-colors placeholder-textSec dark:placeholder-gray-300 rounded-full outline-none cursor-pointer"
                   type="text"
                   placeholder="What's on your mind?"
                   disabled
@@ -541,7 +581,7 @@
 
             <div class="flex items-center justify-betwen pt-4">
               <div
-                class="flex items-center w-1/2 md:w-1/3 justify-center py-1 cursor-pointer hover:bg-gray-100 rounded-lg"
+                class="flex items-center w-1/2 md:w-1/3 justify-center py-1 cursor-pointer hover:bg-gray-100 dark:hover:bg-darkLight rounded-lg"
               >
                 <div class="flex items-center space-x-2">
                   <span
@@ -549,11 +589,12 @@
                   >
                     videocam
                   </span>
-                  <span>Live video</span>
+                  <span class="dark:text-gray-300">Live video</span>
                 </div>
               </div>
+
               <div
-                class="flex items-center w-1/2 md:w-1/3 justify-center py-1 cursor-pointer hover:bg-gray-100 rounded-lg"
+                class="flex items-center w-1/2 md:w-1/3 justify-center py-1 cursor-pointer hover:bg-gray-100 dark:hover:bg-darkLight rounded-lg"
               >
                 <div class="flex items-center space-x-2">
                   <span
@@ -561,11 +602,12 @@
                   >
                     image
                   </span>
-                  <span>Photo/video</span>
+                  <span class="dark:text-gray-300">Photo/video</span>
                 </div>
               </div>
+
               <div
-                class="hidden md:flex items-center w-1/3 justify-center py-1 cursor-pointer hover:bg-gray-100 rounded-lg"
+                class="hidden md:flex items-center w-1/3 justify-center py-1 cursor-pointer hover:bg-gray-100 dark:hover:bg-darkLight rounded-lg"
               >
                 <div class="flex items-center space-x-2">
                   <span
@@ -573,14 +615,14 @@
                   >
                     mood
                   </span>
-                  <span>Feeling/activity</span>
+                  <span class="dark:text-gray-300">Feeling/activity</span>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- public post start -->
-          <div class="bg-white rounded-lg drop-shadow overflow-hidden">
+          <div class="publicPost">
             <!-- post info -->
             <div class="flex items-center space-x-3 px-4 py-4">
               <div>
@@ -598,11 +640,11 @@
                   <p class="capitalize text-sm font-semibold pt-2">
                     <a
                       href="#"
-                      class="hover:underline underline-offset-2 transition-all"
+                      class="dark:text-gray-200 hover:underline underline-offset-2 transition-all"
                       >john doe</a
                     >
                   </p>
-                  <p class="capitalize text-sm text-textSec">
+                  <p class="capitalize text-sm text-textSec dark:text-gray-300">
                     29 April
                     <span class="material-symbols-outlined text-base">
                       public
@@ -612,7 +654,7 @@
               </div>
               <div>
                 <div
-                  class="flex items-center justify-center w-12 h-12 overflow-hidden rounded-full hover:bg-gray-300 cursor-pointer"
+                  class="flex items-center justify-center w-12 h-12 overflow-hidden rounded-full hover:bg-gray-300 dark:text-gray-200 dark:hover:bg-darkLight cursor-pointer"
                 >
                   <span class="material-symbols-outlined text-3xl">
                     more_horiz
@@ -622,7 +664,7 @@
             </div>
 
             <!-- caption -->
-            <div class="w-full px-4 pb-4 text-gray-700">
+            <div class="w-full px-4 pb-4 text-gray-700 dark:text-gray-300">
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Adipisci exercitationem maxime consequuntur. Possimus,
@@ -632,7 +674,7 @@
 
             <!-- photo -->
             <div
-              class="flex items-center content-center w-full pb-4 overflow-hidden bg-white box-border"
+              class="flex items-center content-center w-full pb-4 overflow-hidden bg-white dark:bg-dark box-border"
             >
               <div class="w-full max-h-[600px] overflow-hidden">
                 <img
@@ -644,21 +686,25 @@
             </div>
 
             <!-- like comment count -->
-            <div class="px-4">
-              <div class="flex items-center py-1 border-y-2 border-gray-300">
+            <div class="px-4 text-textSec dark:text-gray-300">
+              <div
+                class="flex items-center py-1 border-y-2 border-gray-300 dark:border-darkLight"
+              >
                 <div class="w-1/2">
-                  <p class="text-textSec">💚 999</p>
+                  <p>💚 999</p>
                 </div>
                 <div class="w-1/2 text-right">
-                  <p class="text-textSec">99 comments</p>
+                  <p>99 comments</p>
                 </div>
               </div>
             </div>
 
             <!-- like comment button -->
-            <div class="flex items-center justify-between px-4 py-1">
+            <div
+              class="flex items-center justify-between px-4 py-1 text-textSec dark:text-gray-200"
+            >
               <div
-                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 rounded-md cursor-pointer text-textSec"
+                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 dark:hover:bg-darkLight rounded-md cursor-pointer"
               >
                 <span class="material-symbols-outlined fill-icon text-red-600">
                   favorite
@@ -666,7 +712,7 @@
                 <span>Like</span>
               </div>
               <div
-                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 rounded-md cursor-pointer text-textSec"
+                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 dark:hover:bg-darkLight rounded-md cursor-pointer"
               >
                 <span class="material-symbols-outlined fill-icon">
                   comment
@@ -674,7 +720,7 @@
                 <span>Comment</span>
               </div>
               <div
-                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 rounded-md cursor-pointer text-textSec"
+                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 dark:hover:bg-darkLight rounded-md cursor-pointer"
               >
                 <span class="material-symbols-outlined fill-icon"> share </span>
                 <span>Share</span>
@@ -682,7 +728,7 @@
             </div>
           </div>
 
-          <div class="bg-white rounded-lg drop-shadow overflow-hidden">
+          <div class="publicPost">
             <!-- post info -->
             <div class="flex items-center space-x-3 px-4 py-4">
               <div>
@@ -700,11 +746,11 @@
                   <p class="capitalize text-sm font-semibold pt-2">
                     <a
                       href="#"
-                      class="hover:underline underline-offset-2 transition-all"
+                      class="dark:text-gray-200 hover:underline underline-offset-2 transition-all"
                       >john doe</a
                     >
                   </p>
-                  <p class="capitalize text-sm text-textSec">
+                  <p class="capitalize text-sm text-textSec dark:text-gray-300">
                     29 April
                     <span class="material-symbols-outlined text-base">
                       public
@@ -714,7 +760,7 @@
               </div>
               <div>
                 <div
-                  class="flex items-center justify-center w-12 h-12 overflow-hidden rounded-full hover:bg-gray-300 cursor-pointer"
+                  class="flex items-center justify-center w-12 h-12 overflow-hidden rounded-full hover:bg-gray-300 dark:text-gray-200 dark:hover:bg-darkLight cursor-pointer"
                 >
                   <span class="material-symbols-outlined text-3xl">
                     more_horiz
@@ -724,7 +770,7 @@
             </div>
 
             <!-- caption -->
-            <div class="w-full px-4 pb-4 text-gray-700">
+            <div class="w-full px-4 pb-4 text-gray-700 dark:text-gray-300">
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Adipisci exercitationem maxime consequuntur. Possimus,
@@ -734,7 +780,7 @@
 
             <!-- photo -->
             <div
-              class="flex items-center content-center w-full pb-4 overflow-hidden bg-white box-border"
+              class="flex items-center content-center w-full pb-4 overflow-hidden bg-white dark:bg-dark box-border"
             >
               <div class="w-full max-h-[600px] overflow-hidden">
                 <img
@@ -746,21 +792,25 @@
             </div>
 
             <!-- like comment count -->
-            <div class="px-4">
-              <div class="flex items-center py-1 border-y-2 border-gray-300">
+            <div class="px-4 text-textSec dark:text-gray-300">
+              <div
+                class="flex items-center py-1 border-y-2 border-gray-300 dark:border-darkLight"
+              >
                 <div class="w-1/2">
-                  <p class="text-textSec">💚 999</p>
+                  <p>💚 999</p>
                 </div>
                 <div class="w-1/2 text-right">
-                  <p class="text-textSec">99 comments</p>
+                  <p>99 comments</p>
                 </div>
               </div>
             </div>
 
             <!-- like comment button -->
-            <div class="flex items-center justify-between px-4 py-1">
+            <div
+              class="flex items-center justify-between px-4 py-1 text-textSec dark:text-gray-200"
+            >
               <div
-                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 rounded-md cursor-pointer text-textSec"
+                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 dark:hover:bg-darkLight rounded-md cursor-pointer"
               >
                 <span class="material-symbols-outlined fill-icon text-red-600">
                   favorite
@@ -768,7 +818,7 @@
                 <span>Like</span>
               </div>
               <div
-                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 rounded-md cursor-pointer text-textSec"
+                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 dark:hover:bg-darkLight rounded-md cursor-pointer"
               >
                 <span class="material-symbols-outlined fill-icon">
                   comment
@@ -776,7 +826,7 @@
                 <span>Comment</span>
               </div>
               <div
-                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 rounded-md cursor-pointer text-textSec"
+                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 dark:hover:bg-darkLight rounded-md cursor-pointer"
               >
                 <span class="material-symbols-outlined fill-icon"> share </span>
                 <span>Share</span>
@@ -784,7 +834,7 @@
             </div>
           </div>
 
-          <div class="bg-white rounded-lg drop-shadow overflow-hidden">
+          <div class="publicPost">
             <!-- post info -->
             <div class="flex items-center space-x-3 px-4 py-4">
               <div>
@@ -802,11 +852,11 @@
                   <p class="capitalize text-sm font-semibold pt-2">
                     <a
                       href="#"
-                      class="hover:underline underline-offset-2 transition-all"
+                      class="dark:text-gray-200 hover:underline underline-offset-2 transition-all"
                       >john doe</a
                     >
                   </p>
-                  <p class="capitalize text-sm text-textSec">
+                  <p class="capitalize text-sm text-textSec dark:text-gray-300">
                     29 April
                     <span class="material-symbols-outlined text-base">
                       public
@@ -816,7 +866,7 @@
               </div>
               <div>
                 <div
-                  class="flex items-center justify-center w-12 h-12 overflow-hidden rounded-full hover:bg-gray-300 cursor-pointer"
+                  class="flex items-center justify-center w-12 h-12 overflow-hidden rounded-full hover:bg-gray-300 dark:text-gray-200 dark:hover:bg-darkLight cursor-pointer"
                 >
                   <span class="material-symbols-outlined text-3xl">
                     more_horiz
@@ -826,7 +876,7 @@
             </div>
 
             <!-- caption -->
-            <div class="w-full px-4 pb-4 text-gray-700">
+            <div class="w-full px-4 pb-4 text-gray-700 dark:text-gray-300">
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Adipisci exercitationem maxime consequuntur. Possimus,
@@ -836,7 +886,7 @@
 
             <!-- photo -->
             <div
-              class="flex items-center content-center w-full pb-4 overflow-hidden bg-white box-border"
+              class="flex items-center content-center w-full pb-4 overflow-hidden bg-white dark:bg-dark box-border"
             >
               <div class="w-full max-h-[600px] overflow-hidden">
                 <img
@@ -848,21 +898,25 @@
             </div>
 
             <!-- like comment count -->
-            <div class="px-4">
-              <div class="flex items-center py-1 border-y-2 border-gray-300">
+            <div class="px-4 text-textSec dark:text-gray-300">
+              <div
+                class="flex items-center py-1 border-y-2 border-gray-300 dark:border-darkLight"
+              >
                 <div class="w-1/2">
-                  <p class="text-textSec">💚 999</p>
+                  <p>💚 999</p>
                 </div>
                 <div class="w-1/2 text-right">
-                  <p class="text-textSec">99 comments</p>
+                  <p>99 comments</p>
                 </div>
               </div>
             </div>
 
             <!-- like comment button -->
-            <div class="flex items-center justify-between px-4 py-1">
+            <div
+              class="flex items-center justify-between px-4 py-1 text-textSec dark:text-gray-200"
+            >
               <div
-                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 rounded-md cursor-pointer text-textSec"
+                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 dark:hover:bg-darkLight rounded-md cursor-pointer"
               >
                 <span class="material-symbols-outlined fill-icon text-red-600">
                   favorite
@@ -870,7 +924,7 @@
                 <span>Like</span>
               </div>
               <div
-                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 rounded-md cursor-pointer text-textSec"
+                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 dark:hover:bg-darkLight rounded-md cursor-pointer"
               >
                 <span class="material-symbols-outlined fill-icon">
                   comment
@@ -878,13 +932,14 @@
                 <span>Comment</span>
               </div>
               <div
-                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 rounded-md cursor-pointer text-textSec"
+                class="like w-1/3 py-1 flex items-center space-x-2 justify-center hover:bg-gray-200 dark:hover:bg-darkLight rounded-md cursor-pointer"
               >
                 <span class="material-symbols-outlined fill-icon"> share </span>
                 <span>Share</span>
               </div>
             </div>
           </div>
+
           <!-- public post end -->
         </div>
         <!-- main content end -->
@@ -920,7 +975,9 @@
           <!-- active firend list -->
           <div class="">
             <ul>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center relative" href="#"
                   ><span
                     class="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden mr-4"
@@ -940,7 +997,9 @@
                   </span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center relative" href="#"
                   ><span
                     class="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden mr-4"
@@ -960,7 +1019,9 @@
                   </span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center relative" href="#"
                   ><span
                     class="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden mr-4"
@@ -980,7 +1041,9 @@
                   </span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center relative" href="#"
                   ><span
                     class="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden mr-4"
@@ -1000,7 +1063,9 @@
                   </span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center relative" href="#"
                   ><span
                     class="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden mr-4"
@@ -1021,7 +1086,9 @@
                 </a>
               </li>
 
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center relative" href="#"
                   ><span
                     class="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden mr-4"
@@ -1041,7 +1108,9 @@
                   </span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center relative" href="#"
                   ><span
                     class="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden mr-4"
@@ -1061,7 +1130,9 @@
                   </span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center relative" href="#"
                   ><span
                     class="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden mr-4"
@@ -1081,7 +1152,9 @@
                   </span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center relative" href="#"
                   ><span
                     class="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden mr-4"
@@ -1101,7 +1174,9 @@
                   </span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center relative" href="#"
                   ><span
                     class="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden mr-4"
@@ -1122,7 +1197,9 @@
                 </a>
               </li>
 
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center relative" href="#"
                   ><span
                     class="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden mr-4"
@@ -1142,7 +1219,9 @@
                   </span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center relative" href="#"
                   ><span
                     class="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden mr-4"
@@ -1162,7 +1241,9 @@
                   </span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center relative" href="#"
                   ><span
                     class="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden mr-4"
@@ -1182,7 +1263,9 @@
                   </span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center relative" href="#"
                   ><span
                     class="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden mr-4"
@@ -1202,7 +1285,9 @@
                   </span>
                 </a>
               </li>
-              <li class="block w-full hover:bg-gray-200 px-2 py-2 rounded-lg">
+              <li
+                class="block w-full hover:bg-gray-200 dark:hover:bg-dark px-2 py-2 rounded-lg"
+              >
                 <a class="capitalize flex items-center relative" href="#"
                   ><span
                     class="flex items-center justify-center w-8 h-8 rounded-full overflow-hidden mr-4"
@@ -1233,5 +1318,8 @@
     <!-- footer start -->
     <footer></footer>
     <!-- footer end -->
+
+    <!-- javascript -->
+    <script src="script.js"></script>
   </body>
 </html>
